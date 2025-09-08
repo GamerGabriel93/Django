@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    {% include "header.html" %}
+</head>
+<body class="text-center bg-dark text-primary">
+    {% include "menu.html"%}
+
+    {% block tartalom %}
+
+    {% endblock tartalom %}
+
+    {% include "footer.html" %}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

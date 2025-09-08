@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block tartalom %}
+
+    <form method="post">
+
+        {% csrf_token %}
+
+        <label for="job">Job:</label><br>
+        <input type="text" name="job" id="job" required><br><br>
+        <label for="deadline">Deadline:</label><br>
+        <input type="date" name="deadline" id="deadline" required><br><br>
+        <label for="done">Done:</label><br>
+        <input type="checkbox" name="done" id="done" value='false'><br><br>
+        <input type="submit" id="save" name="save" value="Save">
+    </form>
+{% endblock tartalom %}
